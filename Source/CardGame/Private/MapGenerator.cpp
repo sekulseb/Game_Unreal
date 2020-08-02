@@ -43,15 +43,21 @@ void AMapGenerator::Tick(float DeltaTime)
 // MAP METHODS
 
 void AMapGenerator::GenerateMapCords() 
-{
-	float offsetX = 0;
+{	
+	const float UHEX_SIZE = HEX_TILE_SIDE_LENGTH * HEX_SIDE_SIZE;
+	const float UHEX_HEIGHT = UHEX_SIZE * sqrt(3);
+
+	const float HEX_X = UHEX_SIZE * 1.5;
+	const float HEX_Y = UHEX_HEIGHT;  // (a * sqrt(3)) / 2
+	
 	for (int row = 0; row < ROWS_AMOUNT; row++) {
 		for (int column = 0; column < COLUMNS_AMOUNT; column++) {
-			MapCords[row][column].X = (float)column * (HEX_DIMENSION_X + HEX_TILE_GAP);
-			MapCords[row][column].Y = (float)row * (Y_OFFSET + HEX_TILE_GAP);
+			MapCords[row][column].Y = (float)row * (HEX_Y + HEX_TILE_GAP);
+			MapCords[row][column].X = (float)column * (HEX_X + HEX_TILE_GAP);
 			MapCords[row][column].Z = 0;
-			if (row % 2) {
-				MapCords[row][column].X += X_OFFSET;
+			if (column % 2) {
+				MapCords[row][column].Y += UHEX_HEIGHT / 2;		
+				MapCords[row][column].Y += HEX_TILE_GAP / 2;
 			}
 		}
 	}
@@ -93,5 +99,5 @@ void AMapGenerator::CreateStaticMeshes() {
 void AMapGenerator::SetDynamicMaterial(UTexture* materialTexture) {
 	DynamicMaterial = HexTiles[0]->CreateAndSetMaterialInstanceDynamic(0);	
 	HexTiles[0]->SetMaterial(0, DynamicMaterial);
-	DynamicMaterial->SetTextureParameterValue(TEXT("MyTexture"), materialTexture);
+	DynamicMaterial->SetTextureParameterValue(TEXT("Texture"), materialTexture);
 }

@@ -11,20 +11,13 @@
 
 using namespace std;
 
-const int COLUMNS_AMOUNT = 10;
-const int ROWS_AMOUNT = 10;
+const int ROWS_AMOUNT = 8;
+const int COLUMNS_AMOUNT = 12;
 
 const int HEX_TILE_SIDE_LENGTH = 1;
-const float HEX_TILE_GAP = 1; // todo - fix this - gaps are not equal
+const float HEX_TILE_GAP = 2;
 
-const float HEX_Y = HEX_TILE_SIDE_LENGTH * 100;
-const float HEX_DIMENSION_Y = HEX_Y * 2;
-
-const float HEX_X = ((HEX_TILE_SIDE_LENGTH * sqrt(3)) / 2) * 100;  // (a * sqrt(3)) / 2
-const float HEX_DIMENSION_X = HEX_X * 2;
-
-const float Y_OFFSET = HEX_Y * 1.5;
-const float X_OFFSET = HEX_X;
+const float HEX_SIDE_SIZE = 100;
 
 UCLASS()
 class CARDGAME_API AMapGenerator : public AActor

@@ -1,47 +1,45 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-#pragma once
-
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Components/StaticMeshComponent.h"
-#include <string>
 #include "Math.h"
+#include "MapConsts.h"
+#include "MapTypes.h"
 #include "MapGenerator.generated.h"
+
+#pragma once
 
 using namespace std;
 
-const int ROWS_AMOUNT = 8;
-const int COLUMNS_AMOUNT = 12;
-
-const int HEX_TILE_SIDE_LENGTH = 1;
-const float HEX_TILE_GAP = 2;
-
-const float HEX_SIDE_SIZE = 100;
+// map generator
 
 UCLASS()
 class CARDGAME_API AMapGenerator : public AActor
 {
 	GENERATED_BODY()
 
-public:	
+public:
 	// Sets default values for this actor's properties
 	AMapGenerator();
 
 	UPROPERTY()
-	USceneComponent* Root;
+		USceneComponent* Root;
 	UPROPERTY(EditAnywhere)
-	UMaterial* Material;
+		UMaterial* Material;
 	UPROPERTY(EditAnywhere)
-	UMaterialInstanceDynamic* DynamicMaterial;
+		UMaterialInstanceDynamic* DynamicMaterial;
 	UPROPERTY(EditAnywhere)
-	UTexture* Texture;
-	UPROPERTY(EditAnywhere)
-	UStaticMesh* StaticMesh;
-	UPROPERTY(EditAnywhere)
-	UStaticMeshComponent* HexTiles[ROWS_AMOUNT * COLUMNS_AMOUNT];
+		UStaticMesh* StaticMesh;
+
+	//UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* HexTiles[ROWS_AMOUNT][COLUMNS_AMOUNT];
+
+	MapTexture MapTextures[TERRAIN_TYPES_AMOUNT];
 
 	FVector MapCords[ROWS_AMOUNT][COLUMNS_AMOUNT];
+
+	// TESTING PROPS
+	UPROPERTY(EditAnywhere)
+	float noiseOneDimmensionalArray[ROWS_AMOUNT * COLUMNS_AMOUNT];
 
 private:
 
@@ -49,7 +47,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -63,6 +61,11 @@ public:
 
 	virtual void GetStaticAssets();
 
-	virtual void SetDynamicMaterial(UTexture* materialTexture);
+	virtual void LoadTextures();
 
+	virtual void SetDynamicMaterial(UStaticMeshComponent* meshComponent, UTexture* materialTexture);
+
+	// TESTING METHOD 
+
+	//virtual void ConvertNoiseCords();
 };

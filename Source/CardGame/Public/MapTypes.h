@@ -1,15 +1,29 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+#include "Components/StaticMeshComponent.h"
+#include <string>
 
 #pragma once
 
-#include "CoreMinimal.h"
+using namespace std;
 
-/**
- * 
- */
-class CARDGAME_API MapTypes
+enum TERRAIN_TYPES
 {
-public:
-	MapTypes();
-	~MapTypes();
+	WATER,
+	GRASS,
+	TREE_GRASS,
+	PINE_TREE,
+	MOUNTAIN
+};
+
+struct MapTexture 
+{
+	FName name; // for now its not needed
+	UTexture* texture;
+};
+
+struct TerrainType
+{
+	TERRAIN_TYPES type;	
+	float minField;
+	float maxField;
+	TCHAR* texturePath;
 };

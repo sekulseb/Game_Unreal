@@ -1,14 +1,21 @@
 #include "CoreMinimal.h"
+#include "MapConsts.h"
+#include "MapTypes.h"
+#include "UObject/ConstructorHelpers.h"
+#include "Helpers/Assets.h"
 
 #pragma once
 
-class CARDGAME_API MapAssets
+class MapAssets
 {
 public:
 	MapAssets();
-	UTexture* Grass;
-	UTexture* GetTexture(TCHAR* path);
+
+	MapTexture terrainTextures[5];
 
 private:
-	virtual UTexture* GetTexture(TCHAR* path);
+	//virtual UTexture* GetTexture(TCHAR* path);
+	virtual void GetMapTextures();
+	virtual void GetMapMeshes();
+	virtual void GetMapMaterials();
 }; 

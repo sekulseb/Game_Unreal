@@ -16,7 +16,7 @@ enum TERRAIN_TYPES
 
 struct MapTexture 
 {
-	FName name; // for now its not needed
+	TERRAIN_TYPES type;
 	UTexture* texture;
 };
 

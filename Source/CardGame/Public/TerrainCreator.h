@@ -4,7 +4,7 @@
 
 #pragma once
 
-class CARDGAME_API TerrainCreator
+class TerrainCreator
 {
 public:
 	TerrainType terrainTypes[TERRAIN_TYPES_AMOUNT];

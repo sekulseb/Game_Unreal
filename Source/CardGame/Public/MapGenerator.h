@@ -2,8 +2,12 @@
 #include "GameFramework/Actor.h"
 #include "Components/StaticMeshComponent.h"
 #include "Math.h"
+
 #include "MapConsts.h"
 #include "MapTypes.h"
+#include "MapAssets.h"
+#include "TerrainCreator.h"
+
 #include "MapGenerator.generated.h"
 
 #pragma once

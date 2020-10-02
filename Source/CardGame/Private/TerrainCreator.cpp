@@ -1,5 +1,4 @@
 #include "TerrainCreator.h"
-#include "MapConsts.h"
 
 TerrainCreator::TerrainCreator()
 {

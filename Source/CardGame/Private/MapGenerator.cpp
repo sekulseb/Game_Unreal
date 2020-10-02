@@ -3,16 +3,23 @@
 #include "UObject/ConstructorHelpers.h"
 #include "Materials/MaterialInstanceDynamic.h"
 
+
 // Sets default values
 AMapGenerator::AMapGenerator()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+ 	// Set this actor to call Tick() every frame. You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 	Root = CreateDefaultSubobject<USceneComponent>(TEXT("root"));
 	RootComponent = Root;
 
+
+	MapAssets mapAssets;
+	
+
 	LoadTextures();
+
 	GetStaticAssets();
+
 	GenerateMapCords();
 	CreateStaticMeshes();
 }
@@ -95,7 +102,9 @@ void AMapGenerator::SetDynamicMaterial(UStaticMeshComponent* meshComponent, UTex
 
 void AMapGenerator::LoadTextures() {
 
-	static ConstructorHelpers::FObjectFinder<UTexture> TextureGrass_1(TEXT("Texture2D'/Game/map/grass_1.grass_1'"));
+	
+
+	/*static ConstructorHelpers::FObjectFinder<UTexture> TextureGrass_1(TEXT("Texture2D'/Game/map/grass_1.grass_1'"));
 	static ConstructorHelpers::FObjectFinder<UTexture> TextureMountains_1(TEXT("Texture2D'/Game/map/mountains_1.mountains_1'"));
 	static ConstructorHelpers::FObjectFinder<UTexture> TexturePainTrees_1(TEXT("Texture2D'/Game/map/pine_trees_1.pine_trees_1'"));
 	static ConstructorHelpers::FObjectFinder<UTexture> TextureTreesGrass_1(TEXT("Texture2D'/Game/map/trees_grass_1.trees_grass_1'"));
@@ -114,20 +123,6 @@ void AMapGenerator::LoadTextures() {
 	MapTextures[3].texture = TextureTreesGrass_1.Object;
 
 	MapTextures[4].name = FName("TextureSea_1");
-	MapTextures[4].texture = TextureSea_1.Object;
+	MapTextures[4].texture = TextureSea_1.Object;*/
 	
 }
-
-// test methods 
-
-//void AMapGenerator::ConvertNoiseCords() {
-	/*int index = 0;
-	for (int row = 0; row < ROWS_AMOUNT; row++)
-	{
-		for (int col = 0; col < COLUMNS_AMOUNT; col++)
-		{
-			noiseOneDimmensionalArray[index] = noiseCords[row][col];
-			index++;
-		}
-	}*/
-//}

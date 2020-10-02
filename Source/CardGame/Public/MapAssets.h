@@ -2,7 +2,7 @@
 #include "MapConsts.h"
 #include "MapTypes.h"
 #include "UObject/ConstructorHelpers.h"
-#include "Helpers/Assets.h"
+#include "Assets.h"
 
 #pragma once
 
@@ -15,7 +15,7 @@ public:
 
 private:
 	//virtual UTexture* GetTexture(TCHAR* path);
-	virtual void GetMapTextures();
+	/*virtual void GetMapTextures();
 	virtual void GetMapMeshes();
-	virtual void GetMapMaterials();
+	virtual void GetMapMaterials();*/
 }; 

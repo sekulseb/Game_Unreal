@@ -1,5 +1,4 @@
 #include "MapAssets.h"
-#include "Assets.h"
 
 //#pragma once
 
@@ -28,13 +27,5 @@ void MapAssets::GetMapTextures() {
 		TERRAIN_TYPES::MOUNTAIN,
 		GetTexture(MOUNTAIN_TERRAIN.texturePath)
 	};
-}
-
-void MapAssets::GetMapMeshes() {
-	
-}
-
-void MapAssets::GetMapMaterials() {
-	
 }
 

@@ -8,14 +8,8 @@
 
 class MapAssets
 {
+	void GetMapTextures();
 public:
 	MapAssets();
-
-	MapTexture terrainTextures[5];
-
-private:
-	//virtual UTexture* GetTexture(TCHAR* path);
-	/*virtual void GetMapTextures();
-	virtual void GetMapMeshes();
-	virtual void GetMapMaterials();*/
+	MapTexture TerrainTextures[5];
 }; 

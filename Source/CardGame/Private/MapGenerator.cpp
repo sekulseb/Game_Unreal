@@ -12,9 +12,7 @@ AMapGenerator::AMapGenerator()
 	Root = CreateDefaultSubobject<USceneComponent>(TEXT("root"));
 	RootComponent = Root;
 
-
-	MapAssets mapAssets;
-	
+	MapAssets mapAssets;	
 
 	LoadTextures();
 

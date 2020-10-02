@@ -1,5 +1,5 @@
 #include "MapAssets.h"
-
+#include "Assets.h"
 //#pragma once
 
 MapAssets::MapAssets() {
@@ -7,25 +7,25 @@ MapAssets::MapAssets() {
 }
 
 void MapAssets::GetMapTextures() {
-	terrainTextures[0] = {
+	TerrainTextures[0] = {
 		TERRAIN_TYPES::GRASS,
-		GetTexture(GRASS_TERRAIN.texturePath)
+		Assets::GetTexture(GRASS_TERRAIN.texturePath)
 	};
-	terrainTextures[1] = {
+	TerrainTextures[1] = {
 		TERRAIN_TYPES::WATER,
-		GetTexture(WATER_TERRAIN.texturePath)
+		Assets::GetTexture(WATER_TERRAIN.texturePath)
 	};
-	terrainTextures[2] = {
+	TerrainTextures[2] = {
 		TERRAIN_TYPES::TREE_GRASS,
-		GetTexture(TREE_WITH_GRASS_TERRAIN.texturePath)
+		Assets::GetTexture(TREE_WITH_GRASS_TERRAIN.texturePath)
 	};
-	terrainTextures[3] = {
+	TerrainTextures[3] = {
 		TERRAIN_TYPES::PINE_TREE,
-		GetTexture(PINE_TREE_TERRAIN.texturePath)
+		Assets::GetTexture(PINE_TREE_TERRAIN.texturePath)
 	};
-	terrainTextures[4] = {
+	TerrainTextures[4] = {
 		TERRAIN_TYPES::MOUNTAIN,
-		GetTexture(MOUNTAIN_TERRAIN.texturePath)
+		Assets::GetTexture(MOUNTAIN_TERRAIN.texturePath)
 	};
 }
 

@@ -7,13 +7,16 @@ T Assets::GetAasset(TCHAR* path) {
 }
 
 UTexture* Assets::GetTexture(TCHAR* path) {
-	return GetAasset<UTexture*>(path);
+	Assets Assets;
+	return Assets.GetAasset<UTexture*>(path);
 }
 
 UStaticMesh* Assets::GetMesh(TCHAR* path) {
-	return GetAasset<UStaticMesh*>(path);
+	Assets Assets;
+	return Assets.GetAasset<UStaticMesh*>(path);
 }
 
 UMaterial* Assets::GetMaterial(TCHAR* path) {
-	return GetAasset<UMaterial*>(path);
+	Assets Assets;
+	return Assets.GetAasset<UMaterial*>(path);
 }

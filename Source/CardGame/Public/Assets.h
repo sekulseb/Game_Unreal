@@ -8,8 +8,8 @@ class Assets
 	template <typename T>
 	T GetAasset(TCHAR* path);
 public:
-	virtual UTexture* GetTexture(TCHAR* path);
-	virtual UStaticMesh* GetMesh(TCHAR* path);
-	virtual UMaterial* GetMaterial(TCHAR* path);
+	static UTexture* GetTexture(TCHAR* path);
+	static UStaticMesh* GetMesh(TCHAR* path);
+	static UMaterial* GetMaterial(TCHAR* path);
 };
 

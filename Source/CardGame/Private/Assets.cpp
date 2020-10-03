@@ -13,7 +13,7 @@ UTexture* Assets::GetTexture(TCHAR* path) {
 	return Assets.GetAasset<UTexture>(path);
 }
 
-UStaticMesh* Assets::GetMesh(TCHAR* path) {
+UStaticMesh* Assets::GetStaticMesh(TCHAR* path) {
 	Assets Assets;
 	return Assets.GetAasset<UStaticMesh>(path);
 }

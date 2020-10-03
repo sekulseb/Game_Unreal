@@ -16,13 +16,21 @@ enum TERRAIN_TYPES
 
 struct MapTexture 
 {
-	TERRAIN_TYPES type;
-	UTexture* texture;
+	TERRAIN_TYPES Type;
+	UTexture* Texture;
+};
+
+struct MapStaticMesh {
+	UStaticMesh* StaticMesh;
+};
+
+struct MapMaterial {
+	UMaterial* Material;
 };
 
 struct TerrainType
 {
-	TERRAIN_TYPES type;	
+	TERRAIN_TYPES Type;	
 	float minField;
 	float maxField;	
 };

@@ -9,7 +9,7 @@ class Assets
 	T* GetAasset(TCHAR* path);
 public:
 	static UTexture* GetTexture(TCHAR* path);
-	static UStaticMesh* GetMesh(TCHAR* path);
+	static UStaticMesh* GetStaticMesh(TCHAR* path);
 	static UMaterial* GetMaterial(TCHAR* path);
 };
 

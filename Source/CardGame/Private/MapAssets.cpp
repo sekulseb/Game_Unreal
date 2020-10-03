@@ -1,10 +1,13 @@
-#include "MapAssets.h"
-#include "Assets.h"
-#include "MapConsts.h"
 #pragma once
+
+#include "MapAssets.h"
+#include "CoreMinimal.h"
+#include "Assets.h"
 
 MapAssets::MapAssets() {
 	GetMapTextures();
+	GetMapMaterials();
+	GetMapStaticMeshes();
 }
 
 void MapAssets::GetMapTextures() {
@@ -30,3 +33,14 @@ void MapAssets::GetMapTextures() {
 	};
 }
 
+void MapAssets::GetMapMaterials() {
+	Materials[0] = {
+		Assets::GetMaterial(MATERIAL_PATH_HEX_TILE)
+	};
+}
+
+void MapAssets::GetMapStaticMeshes() {
+	StaticMeshes[0] = {
+		Assets::GetStaticMesh(STATIC_MESH_PATH_HEX_TILE)
+	};
+}

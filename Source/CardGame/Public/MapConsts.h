@@ -2,15 +2,23 @@
 
 #pragma once
 
-// TERRAIN
-
-const int TERRAIN_TYPES_AMOUNT = 5;
+// ASSETS
 
 TCHAR* const TEXTURE_PATH_GRASS = TEXT("Texture2D'/Game/map/grass_1.grass_1'");
 TCHAR* const TEXTURE_PATH_WATER = TEXT("Texture2D'/Game/map/sea_1.sea_1'");
 TCHAR* const TEXTURE_PATH_TREES_GRASS = TEXT("Texture2D'/Game/map/trees_grass_1.trees_grass_1'");
 TCHAR* const TEXTURE_PATH_PINE_TREES = TEXT("Texture2D'/Game/map/pine_trees_1.pine_trees_1'");
 TCHAR* const TEXTURE_PATH_MOUNTAINS = TEXT("Texture2D'/Game/map/mountains_1.mountains_1'");
+
+TCHAR* const STATIC_MESH_PATH_HEX_TILE = TEXT("StaticMesh'/Game/map/hex-tile.hex-tile'");
+
+TCHAR* const MATERIAL_PATH_HEX_TILE = TEXT("Material'/Game/map/hex-material.hex-material'");
+
+// TERRAIN
+
+const int TERRAIN_TYPES_AMOUNT = 5;
+const int STATIC_MESHES_AMOUNT = 1;
+const int MATERIALS_AMOUNT = 1;
 
 const TerrainType WATER_TERRAIN = {
 	TERRAIN_TYPES::WATER,

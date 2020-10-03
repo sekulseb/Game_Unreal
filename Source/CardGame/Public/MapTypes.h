@@ -24,6 +24,5 @@ struct TerrainType
 {
 	TERRAIN_TYPES type;	
 	float minField;
-	float maxField;
-	TCHAR* texturePath;
+	float maxField;	
 };

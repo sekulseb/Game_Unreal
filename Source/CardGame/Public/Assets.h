@@ -1,7 +1,7 @@
-#pragma once
-
 #include "Components/StaticMeshComponent.h"
 #include "UObject/ConstructorHelpers.h"
+
+#pragma once
 
 class Assets
 {

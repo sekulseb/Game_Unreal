@@ -1,5 +1,7 @@
 #include "Assets.h"
 
+#pragma once
+
 template <typename T>
 T* Assets::GetAasset(TCHAR* path) {
 	ConstructorHelpers::FObjectFinder<T> Asset(path);
@@ -7,8 +9,6 @@ T* Assets::GetAasset(TCHAR* path) {
 }
 
 UTexture* Assets::GetTexture(TCHAR* path) {
-	/*ConstructorHelpers::FObjectFinder<UTexture> asset(path);
-	return asset.Object;*/
 	Assets Assets;
 	return Assets.GetAasset<UTexture>(path);
 }

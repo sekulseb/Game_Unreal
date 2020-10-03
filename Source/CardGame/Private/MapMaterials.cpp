@@ -1,6 +1,7 @@
 #pragma once
 
-#include "MapMaterial.h"
+#include "MapMaterials.h"
+#include "MapTypes.h"
 
 // MAP METHODS
 

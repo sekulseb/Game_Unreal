@@ -1,15 +1,11 @@
 #pragma once
 
 #include "MapMaterial.h"
-#include "MapConsts.h"
-#include "Components/StaticMeshComponent.h"
-#include "UObject/ConstructorHelpers.h"
-#include "Materials/MaterialInstanceDynamic.h"
 
 // MAP METHODS
 
-void MapMaterial::CreateStaticMeshes(USceneComponent* Root) {
-	for (int row = 0; row < ROWS_AMOUNT; row++)
+//void MapMaterial::CreateStaticMeshes(USceneComponent* Root) {
+	/*for (int row = 0; row < ROWS_AMOUNT; row++)
 	{
 		for (int col = 0; col < COLUMNS_AMOUNT; col++)
 		{
@@ -22,11 +18,11 @@ void MapMaterial::CreateStaticMeshes(USceneComponent* Root) {
 			meshComponent->SetRelativeLocation(MapCords[row][col]);
 			meshComponent->SetWorldScale3D(FVector(1.f));
 		}
-	}
-}
+	}*/
+//}
 
-void MapMaterial::SetDynamicMaterial(UStaticMeshComponent* meshComponent, UTexture* materialTexture) {
-	DynamicMaterial = meshComponent->CreateAndSetMaterialInstanceDynamic(0);
+//void MapMaterial::SetDynamicMaterial(UStaticMeshComponent* meshComponent, UTexture* materialTexture) {
+	/*DynamicMaterial = meshComponent->CreateAndSetMaterialInstanceDynamic(0);
 	meshComponent->SetMaterial(0, DynamicMaterial);
-	DynamicMaterial->SetTextureParameterValue("MapTexture", materialTexture);
-}
+	DynamicMaterial->SetTextureParameterValue("MapTexture", materialTexture);*/
+//}

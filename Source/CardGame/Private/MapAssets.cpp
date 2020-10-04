@@ -1,16 +1,15 @@
 #pragma once
 
 #include "MapAssets.h"
-#include "CoreMinimal.h"
 #include "Assets.h"
 
 MapAssets::MapAssets() {
-	GetMapTextures();
-	GetMapMaterials();
+	LoadMapTextures();
+	LoadMapMaterials();
 	GetMapStaticMeshes();
 }
 
-void MapAssets::GetMapTextures() {
+void MapAssets::LoadMapTextures() {
 	TerrainTextures[0] = {
 		TERRAIN_TYPES::GRASS,
 		Assets::GetTexture(TEXTURE_PATH_GRASS)
@@ -33,7 +32,7 @@ void MapAssets::GetMapTextures() {
 	};
 }
 
-void MapAssets::GetMapMaterials() {
+void MapAssets::LoadMapMaterials() {
 	Materials[0] = {
 		Assets::GetMaterial(MATERIAL_PATH_HEX_TILE)
 	};

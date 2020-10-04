@@ -28,10 +28,7 @@ AMapGenerator::AMapGenerator()
 		}
 	}
 
-	
-	
-	// create and bind componentns to root scene
-
+	// create and bind components to root scene
 
 	// apply dynamic material base on noise
 }

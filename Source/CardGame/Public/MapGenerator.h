@@ -1,6 +1,6 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Math.h"
+#include "math.h"
 #include "MapConsts.h"
 #include "Components/StaticMeshComponent.h"
 #include "UObject/ConstructorHelpers.h"
@@ -22,7 +22,8 @@ class CARDGAME_API AMapGenerator : public AActor
 
 	UStaticMeshComponent* HexTiles[ROWS_AMOUNT][COLUMNS_AMOUNT];
 
-	virtual UStaticMeshComponent* CreateStaticMeshComponent(FVector Cords);
+	UStaticMeshComponent* CreateStaticMeshComponent(FVector Cords);
+
 	virtual void SetDynamicMaterial(UStaticMeshComponent* meshComponent, UTexture* materialTexture);
 
 public:

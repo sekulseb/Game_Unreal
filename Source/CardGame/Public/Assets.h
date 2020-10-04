@@ -6,7 +6,7 @@
 class Assets
 {
 	template <typename T>
-	T* GetAasset(TCHAR* path);
+	T* GetAsset(TCHAR* path);
 public:
 	static UTexture* GetTexture(TCHAR* path);
 	static UStaticMesh* GetStaticMesh(TCHAR* path);

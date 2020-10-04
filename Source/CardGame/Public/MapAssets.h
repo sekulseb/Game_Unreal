@@ -6,8 +6,8 @@
 
 class MapAssets
 {
-	void GetMapTextures();
-	void GetMapMaterials();
+	void LoadMapTextures();
+	void LoadMapMaterials();
 	void GetMapStaticMeshes();
 public:
 	MapAssets();

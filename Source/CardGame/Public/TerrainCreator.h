@@ -12,6 +12,7 @@ public:
 	FVector MapCords[ROWS_AMOUNT][COLUMNS_AMOUNT];
 private:
 	float terrainNoiseCords[ROWS_AMOUNT][COLUMNS_AMOUNT];
-	virtual void GenerateTerrainNoise();
-	virtual void GenerateMapCords();
+	void GenerateTerrainNoise();
+	void GenerateMapCords();
+	void SetTerrainTypes();
 };

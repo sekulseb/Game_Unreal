@@ -10,7 +10,7 @@ class MapAssets
 	void LoadMapMaterials();
 	void GetMapStaticMeshes();
 public:
-	MapAssets();
+	void LoadMapAssets();
 	MapTexture TerrainTextures[TERRAIN_TYPES_AMOUNT];
 	MapMaterial Materials[MATERIALS_AMOUNT];
 	MapStaticMesh StaticMeshes[STATIC_MESHES_AMOUNT];

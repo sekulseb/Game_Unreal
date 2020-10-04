@@ -7,6 +7,9 @@ TerrainCreator::TerrainCreator()
 	TerrainTypes[2] = TREE_WITH_GRASS_TERRAIN;
 	TerrainTypes[3] = PINE_TREE_TERRAIN;
 	TerrainTypes[4] = MOUNTAIN_TERRAIN;
+
+	GenerateMapCords();
+	GenerateTerrainNoise();
 }
 
 void TerrainCreator::GenerateTerrainNoise() {

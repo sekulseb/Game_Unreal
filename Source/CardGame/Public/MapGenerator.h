@@ -18,11 +18,7 @@ class CARDGAME_API AMapGenerator : public AActor
 {
 	GENERATED_BODY()
 
-
 	UMaterialInstanceDynamic* HexTileDynamicMaterial;
-
-	UMaterial* HexTileMaterial;
-	UStaticMesh* HexTileStaticMesh;
 
 	UStaticMeshComponent* HexTiles[ROWS_AMOUNT][COLUMNS_AMOUNT];
 
@@ -34,7 +30,11 @@ public:
 	AMapGenerator();
 
 	UPROPERTY()
-		USceneComponent* Root;
+	USceneComponent* Root;
+	UPROPERTY()
+	UMaterial* HexTileMaterial;
+	UPROPERTY()
+	UStaticMesh* HexTileStaticMesh;
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

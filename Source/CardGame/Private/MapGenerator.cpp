@@ -1,4 +1,6 @@
 #include "MapGenerator.h"
+#include "MapAssets.h"
+#include "TerrainCreator.h"
 
 // Sets default values
 AMapGenerator::AMapGenerator()
@@ -9,22 +11,43 @@ AMapGenerator::AMapGenerator()
 	RootComponent = Root;
 
 	// load assets textures
-
 	// load assets material
-
 	// load assets mesh
+	MapAssets MapAssets;
+	
+	HexTileStaticMesh = MapAssets.StaticMeshes[0].StaticMesh;
+	HexTileMaterial = MapAssets.Materials[0].Material;
 
 	// generate cords
-
 	// generate noise
+	
+	TerrainCreator TerrainCreator;
+	for (int i = 0; i < ROWS_AMOUNT; i++) {
+		for (int j = 0; j < COLUMNS_AMOUNT; j++) {
+			HexTiles[i][j] = CreateStaticMeshComponent(TerrainCreator.MapCords[i][j]);
+		}
+	}
 
+	
+	
 	// create and bind componentns to root scene
+
 
 	// apply dynamic material base on noise
 }
 
 void AMapGenerator::PostInitializeComponents() {
 	Super::PostInitializeComponents();
+
+	/*MapAssets MapAssets;
+	TerrainCreator TerrainCreator;*/
+	
+	for (int i = 0; i < ROWS_AMOUNT; i++) {
+		for (int j = 0; j < COLUMNS_AMOUNT; j++) {
+			//SetDynamicMaterial(HexTiles[i][j], MapAssets.TerrainTextures[0].Texture);
+		}
+	}
+
 }
 
 // Called when the game starts or when spawned

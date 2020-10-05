@@ -1,14 +1,13 @@
 #pragma once
 
 #include "MapTypes.h"
-#include "Assets.h"
 #include "MapConsts.h"
 
 class MapAssets
 {
 	void LoadMapTextures();
 	void LoadMapMaterials();
-	void GetMapStaticMeshes();
+	void LoadMapStaticMeshes();
 public:
 	void LoadMapAssets();
 	MapTexture TerrainTextures[TERRAIN_TYPES_AMOUNT];

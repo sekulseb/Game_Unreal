@@ -1,6 +1,8 @@
-#include "MapGenerator.h"
-#include "MapAssets.h"
-#include "TerrainCreator.h"
+#pragma once
+
+#include <CardGame/Map/Public/MapGenerator.h>
+#include <CardGame/Map/Public/MapAssets.h>
+#include <CardGame/Map/Public/TerrainCreator.h>
 
 // Sets default values
 AMapGenerator::AMapGenerator()
@@ -10,18 +12,14 @@ AMapGenerator::AMapGenerator()
 	Root = CreateDefaultSubobject<USceneComponent>(TEXT("root"));
 	RootComponent = Root;
 
-	// load assets textures
-	// load assets material
-	// load assets mesh
-	MapAssets MapAssets;
+	MapAssets MapAssets{};
+	MapAssets.LoadMapAssets();
 	
 	HexTileStaticMesh = MapAssets.StaticMeshes[0].StaticMesh;
 	HexTileMaterial = MapAssets.Materials[0].Material;
 
-	// generate cords
-	// generate noise
-	
 	TerrainCreator TerrainCreator;
+
 	for (int i = 0; i < ROWS_AMOUNT; i++) {
 		for (int j = 0; j < COLUMNS_AMOUNT; j++) {
 			HexTiles[i][j] = CreateStaticMeshComponent(TerrainCreator.MapCords[i][j]);

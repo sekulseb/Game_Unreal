@@ -1,12 +1,12 @@
 #pragma once
 
-#include "MapAssets.h"
-#include "Assets.h"
+#include <CardGame/Map/Public/MapAssets.h>
+#include <CardGame/Shared/Public/Assets.h>
 
 void MapAssets::LoadMapAssets() {
 	LoadMapTextures();
 	LoadMapMaterials();
-	GetMapStaticMeshes();
+    LoadMapStaticMeshes();
 }
 
 void MapAssets::LoadMapTextures() {
@@ -38,7 +38,7 @@ void MapAssets::LoadMapMaterials() {
     };
 }
 
-void MapAssets::GetMapStaticMeshes() {
+void MapAssets::LoadMapStaticMeshes() {
 	StaticMeshes[0] = {
 		Assets::GetStaticMesh(STATIC_MESH_PATH_HEX_TILE)
 	};

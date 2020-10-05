@@ -1,6 +1,6 @@
-#include "Assets.h"
-
 #pragma once
+
+#include <CardGame/Shared/Public/Assets.h>
 
 template <typename T>
 T* Assets::GetAsset(TCHAR* path) {

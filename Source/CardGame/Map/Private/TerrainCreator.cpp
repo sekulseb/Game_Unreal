@@ -1,4 +1,6 @@
-#include "TerrainCreator.h"
+#pragma once
+
+#include <CardGame/Map/Public/TerrainCreator.h>
 
 TerrainCreator::TerrainCreator()
 {

@@ -62,7 +62,7 @@ void AMapGenerator::Tick(float DeltaTime)
 
 UStaticMeshComponent* AMapGenerator::CreateStaticMeshComponent(FVector Cords) {
 	FName MeshName = MakeUniqueObjectName(this, AMapGenerator::StaticClass(), TEXT("Point"));
-	UStaticMeshComponent* meshComponent = CreateDefaultSubobject<UStaticMeshComponent>(MeshName);
+	auto* meshComponent = CreateDefaultSubobject<UStaticMeshComponent>(MeshName);
 	meshComponent->AttachToComponent(Root, FAttachmentTransformRules::KeepWorldTransform);
 	meshComponent->SetStaticMesh(HexTileStaticMesh);
 	meshComponent->SetMaterial(0, HexTileMaterial);

@@ -18,9 +18,9 @@ class CARDGAME_API AMapGenerator : public AActor
 {
 	GENERATED_BODY()
 
-	UMaterialInstanceDynamic* HexTileDynamicMaterial;
+	UMaterialInstanceDynamic* HexTileDynamicMaterial{};
 
-	UStaticMeshComponent* HexTiles[ROWS_AMOUNT][COLUMNS_AMOUNT];
+	UStaticMeshComponent* HexTiles[ROWS_AMOUNT][COLUMNS_AMOUNT]{};
 
 	UStaticMeshComponent* CreateStaticMeshComponent(FVector Cords);
 

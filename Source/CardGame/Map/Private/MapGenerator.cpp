@@ -17,6 +17,9 @@ AMapGenerator::AMapGenerator()
 	
 	HexTileStaticMesh = MapAssets.StaticMeshes[0].StaticMesh;
 	HexTileMaterial = MapAssets.Materials[0].Material;
+    for (int i = 0; i < TERRAIN_TYPES_AMOUNT; i++) {
+        HexTilesTextures[i] = MapAssets.TerrainTextures[i].Texture;
+    }
 
 	TerrainCreator TerrainCreator;
 
@@ -39,7 +42,7 @@ void AMapGenerator::PostInitializeComponents() {
 	
 	for (int i = 0; i < ROWS_AMOUNT; i++) {
 		for (int j = 0; j < COLUMNS_AMOUNT; j++) {
-			//SetDynamicMaterial(HexTiles[i][j], MapAssets.TerrainTextures[0].Texture);
+			SetDynamicMaterial(HexTiles[i][j], HexTilesTextures[0]);
 		}
 	}
 

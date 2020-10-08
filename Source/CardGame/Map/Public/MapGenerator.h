@@ -22,6 +22,8 @@ class CARDGAME_API AMapGenerator : public AActor
 
 	UStaticMeshComponent* HexTiles[ROWS_AMOUNT][COLUMNS_AMOUNT]{};
 
+	UTexture* HexTilesTextures[TERRAIN_TYPES_AMOUNT]{};
+
 	UStaticMeshComponent* CreateStaticMeshComponent(FVector Cords);
 
 	virtual void SetDynamicMaterial(UStaticMeshComponent* meshComponent, UTexture* materialTexture);

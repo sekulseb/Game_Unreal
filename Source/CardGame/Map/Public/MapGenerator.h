@@ -18,26 +18,35 @@ class CARDGAME_API AMapGenerator : public AActor
 {
 	GENERATED_BODY()
 
-	UMaterialInstanceDynamic* HexTileDynamicMaterial{};
+	// scene
+    USceneComponent* Root;
 
-	UStaticMeshComponent* HexTiles[ROWS_AMOUNT][COLUMNS_AMOUNT]{};
-
+	// hex asset material
+    UMaterial* HexTileMaterial;
+    // hex asset mesh
+    UStaticMesh* HexTileStaticMesh;
+	// all hex assets available textures
 	UTexture* HexTilesTextures[TERRAIN_TYPES_AMOUNT]{};
+
+    // dynamic material
+    UMaterialInstanceDynamic* HexTileDynamicMaterial{};
+
+    // all created hex tiles elements
+    UStaticMeshComponent* HexTiles[ROWS_AMOUNT][COLUMNS_AMOUNT]{};
+
+    void SetMapScene();
+
+    void SetAssets();
+
+    void SetMapMeshComponents();
 
 	UStaticMeshComponent* CreateStaticMeshComponent(FVector Cords);
 
-	virtual void SetDynamicMaterial(UStaticMeshComponent* meshComponent, UTexture* materialTexture);
+	void SetDynamicMaterial(UStaticMeshComponent* meshComponent, UTexture* materialTexture);
 
 public:
 	// Sets default values for this actor's properties
 	AMapGenerator();
-
-	UPROPERTY()
-	USceneComponent* Root;
-	UPROPERTY()
-	UMaterial* HexTileMaterial;
-	UPROPERTY()
-	UStaticMesh* HexTileStaticMesh;
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

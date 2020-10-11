@@ -8,11 +8,12 @@ class TerrainCreator
 {
 public:
 	TerrainCreator();
-	TerrainType TerrainTypes[TERRAIN_TYPES_AMOUNT];
-	FVector MapCords[ROWS_AMOUNT][COLUMNS_AMOUNT];
+    MapHex MapHex[ROWS_AMOUNT][COLUMNS_AMOUNT];
+
 private:
-	float terrainNoiseCords[ROWS_AMOUNT][COLUMNS_AMOUNT];
-	void GenerateTerrainNoise();
-	void GenerateMapCords();
-	void SetTerrainTypes();
+    FVector MapCords[ROWS_AMOUNT][COLUMNS_AMOUNT];
+    float terrainNoiseCords[ROWS_AMOUNT][COLUMNS_AMOUNT];
+	void GenerateMapElevationNoise();
+	void GenerateMapHexCords();
+	void CalculateTerrainTypes();
 };

@@ -1,6 +1,6 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "math.h"
+#include <cmath>
 #include "MapConsts.h"
 #include "Components/StaticMeshComponent.h"
 #include "UObject/ConstructorHelpers.h"
@@ -26,17 +26,20 @@ class CARDGAME_API AMapGenerator : public AActor
     // hex asset mesh
     UStaticMesh* HexTileStaticMesh;
 	// all hex assets available textures
-	UTexture* HexTilesTextures[TERRAIN_TYPES_AMOUNT]{};
+	MapTexture HexTilesTextures[TERRAIN_TYPES_AMOUNT];
 
     // dynamic material
     UMaterialInstanceDynamic* HexTileDynamicMaterial{};
 
     // all created hex tiles elements
-    UStaticMeshComponent* HexTiles[ROWS_AMOUNT][COLUMNS_AMOUNT]{};
+    MapStaticMeshComponent MapStaticMeshComponents[ROWS_AMOUNT][COLUMNS_AMOUNT]{};
+
 
     void SetMapScene();
 
     void SetAssets();
+
+    void SetCords();
 
     void SetMapMeshComponents();
 
@@ -44,6 +47,7 @@ class CARDGAME_API AMapGenerator : public AActor
 
 	void SetDynamicMaterial(UStaticMeshComponent* meshComponent, UTexture* materialTexture);
 
+	void ApplyDynamicMaterials();
 public:
 	// Sets default values for this actor's properties
 	AMapGenerator();

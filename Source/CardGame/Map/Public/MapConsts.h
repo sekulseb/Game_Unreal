@@ -51,7 +51,7 @@ const TerrainType MOUNTAIN_TERRAIN = {
 
 // NOISE
 
-const float PERLIN_NOISE_INC = 0.01;
+const float PERLIN_NOISE_INC = 0.1;
 
 // MAP
 

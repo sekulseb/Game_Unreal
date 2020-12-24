@@ -9,13 +9,24 @@ AMapGenerator::AMapGenerator() {
     // Set this actor to call Tick() every frame. You can turn this off to improve performance if you don't need it.
     PrimaryActorTick.bCanEverTick = false;
 
+    // Set scene (root scene object)
     SetMapScene();
+
+    // Set all assets (materials, textures, static meshes (all assets generated in blender/gimp/e.t.c))
     SetAssets();
+
+    // create all mesh components - for map 10 x 10 this method create 100 Mesh components
     SetMapMeshComponents();
 }
 
+/**
+* Life cycle method - runs after game is runned, add dynamic material to all components, this should be behind some loading screen :)
+*/
 void AMapGenerator::PostInitializeComponents() {
     Super::PostInitializeComponents();
+
+    // todo: check this part - why we need to add dynamic material if we
+    // can set different textures at the creation time??
     ApplyDynamicMaterials();
 }
 
@@ -33,45 +44,27 @@ void AMapGenerator::Tick(float DeltaTime) {
     Super::Tick(DeltaTime);
 }
 
-// API
+// privates
 
-UStaticMeshComponent *AMapGenerator::CreateStaticMeshComponent(FVector Cords) {
-    FName MeshName = MakeUniqueObjectName(this, AMapGenerator::StaticClass(), TEXT("Point"));
-    auto *meshComponent = CreateDefaultSubobject<UStaticMeshComponent>(MeshName);
-    meshComponent->AttachToComponent(Root, FAttachmentTransformRules::KeepWorldTransform);
-    meshComponent->SetStaticMesh(HexTileStaticMesh);
-    meshComponent->SetMaterial(0, HexTileMaterial);
-    meshComponent->SetRelativeLocation(Cords);
-    meshComponent->SetWorldScale3D(FVector(1.f));
-    return meshComponent;
-}
-
-void AMapGenerator::SetDynamicMaterial(UStaticMeshComponent *meshComponent, UTexture *materialTexture) {
+/**
+* Set dynamic material for mesh component - this material will replace default material after game is runned.
+* (This 3 lines of code cost me 4 days of online search and unanswered stack question...)
+*/
+void AMapGenerator::SetDynamicMaterial(UStaticMeshComponent* meshComponent, UTexture* materialTexture) {
     HexTileDynamicMaterial = meshComponent->CreateAndSetMaterialInstanceDynamic(0);
     meshComponent->SetMaterial(0, HexTileDynamicMaterial);
     HexTileDynamicMaterial->SetTextureParameterValue("MapTexture", materialTexture);
 }
 
-void AMapGenerator::SetMapScene() {
-    Root = CreateDefaultSubobject<USceneComponent>(TEXT("root"));
-    RootComponent = Root;
-}
-
-void AMapGenerator::SetAssets() {
-    MapAssets MapAssets{};
-    MapAssets.LoadMapAssets();
-    HexTileStaticMesh = MapAssets.StaticMeshes[0].StaticMesh;
-    HexTileMaterial = MapAssets.Materials[0].Material;
-    for (int i = 0; i < TERRAIN_TYPES_AMOUNT; i++) {
-        HexTilesTextures[i] = MapAssets.TerrainTextures[i];
-    }
-}
-
+/**
+* Apply different material for all mesh component based on predefined configuration, basically it changes texture depends
+* on "Z" axis value. e.g. if value Z <= 0 will apply water texture. Different terrain types has different "Z" axis values.
+*/
 void AMapGenerator::ApplyDynamicMaterials() {
-    for (auto &MapStaticMeshComponent : MapStaticMeshComponents) {
-        for (auto &staticMeshComponent : MapStaticMeshComponent) {
-            UTexture *Texture = nullptr;
-            for (auto &hexTilesTextures : HexTilesTextures) {
+    for (auto& MapStaticMeshComponent : MapStaticMeshComponents) {
+        for (auto& staticMeshComponent : MapStaticMeshComponent) {
+            UTexture* Texture = nullptr;
+            for (auto& hexTilesTextures : HexTilesTextures) {
                 if (hexTilesTextures.Type == staticMeshComponent.TerrainType) {
                     Texture = hexTilesTextures.Texture;
                 }
@@ -81,13 +74,65 @@ void AMapGenerator::ApplyDynamicMaterials() {
     }
 }
 
+/**
+* Create mesh component:
+* 1. create mesh component with unique name
+* 2. attach to root scene
+* 3. set static mesh - use default one
+* 4. set material - use default one
+* 5. set 3d cords of mesh - use generated cords from terrain creator (Cords param)
+* 6. set scale - default 1 (no scale)
+*/
+UStaticMeshComponent* AMapGenerator::CreateMeshComponent(FVector Cords) {
+    FName MeshName = MakeUniqueObjectName(this, AMapGenerator::StaticClass(), TEXT("Point"));
+    auto* meshComponent = CreateDefaultSubobject<UStaticMeshComponent>(MeshName);
+    meshComponent->AttachToComponent(Root, FAttachmentTransformRules::KeepWorldTransform);
+    meshComponent->SetStaticMesh(HexTileStaticMesh); // throw an exception!
+    meshComponent->SetMaterial(0, HexTileMaterial);
+    meshComponent->SetRelativeLocation(Cords);
+    meshComponent->SetWorldScale3D(FVector(1.f));
+    return meshComponent;
+}
+
+// API
+
+/**
+* Create root scene object - all other object will be attached to this root object
+*/
+void AMapGenerator::SetMapScene() {
+    Root = CreateDefaultSubobject<USceneComponent>(TEXT("root"));
+    RootComponent = Root;
+}
+
+/**
+* This method set class properties with all assets needed to create map
+* Properties beign set:
+* 1. Default static mesh used to create all tiles
+* 2. Default material used to created all tiles
+* 3. All available textures used to create map
+*/
+void AMapGenerator::SetAssets() {
+    MapAssets MapAssets{};
+    MapAssets.LoadMapAssets(); // load all available assets for map
+
+    HexTileStaticMesh = MapAssets.StaticMeshes[0].StaticMesh; // set default static mesh
+    HexTileMaterial = MapAssets.Materials[0].Material; // set default material
+
+    for (int i = 0; i < TERRAIN_TYPES_AMOUNT; i++) {
+        HexTilesTextures[i] = MapAssets.TerrainTextures[i]; // get all available textures for map
+    }
+}
+
+/**
+* Set all mesh components, used cords generated by TerrainCreator to set correct place for all tales in map
+*/
 void AMapGenerator::SetMapMeshComponents() {
     TerrainCreator TerrainCreator;
     for (int i = 0; i < ROWS_AMOUNT; i++) {
-        for (int j = 0; j < COLUMNS_AMOUNT; j++) {
+        for (int j = 0; j < COLUMNS_AMOUNT; j++) {                      
             MapStaticMeshComponents[i][j] = {
-                    CreateStaticMeshComponent(TerrainCreator.MapHex[i][j].Cords),
-                    TerrainCreator.MapHex[i][j].TerrainType
+                CreateMeshComponent(TerrainCreator.MapHex[i][j].Cords),                                        
+                TerrainCreator.MapHex[i][j].TerrainType
             };
         }
     }

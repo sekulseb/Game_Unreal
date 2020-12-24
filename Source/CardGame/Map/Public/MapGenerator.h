@@ -39,11 +39,11 @@ class CARDGAME_API AMapGenerator : public AActor
 
     void SetAssets();
 
-    void SetCords();
+    //void SetCords();
 
     void SetMapMeshComponents();
 
-	UStaticMeshComponent* CreateStaticMeshComponent(FVector Cords);
+	UStaticMeshComponent* CreateMeshComponent(FVector Cords);
 
 	void SetDynamicMaterial(UStaticMeshComponent* meshComponent, UTexture* materialTexture);
 

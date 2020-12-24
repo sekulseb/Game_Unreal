@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="UE4" targetName="CardGame" />
+      <config projectName="UE4" targetName="FakeTarget" />
+      <config projectName="UE4" targetName="UE4Game" />
+      <config projectName="UE4" targetName="CardGame-Win64-DebugGame" />
+      <config projectName="UE4" targetName="CardGameEditor-Win64-Shipping" />
+      <config projectName="UE4" targetName="UE4Editor" />
+      <config projectName="UE4" targetName="CardGameEditor-Win64-DebugGame" />
+      <config projectName="UE4" targetName="UE4Game-Win64-DebugGame" />
+      <config projectName="UE4" targetName="UE4Game-Win64-Shipping" />
+      <config projectName="UE4" targetName="UE4Editor-Win64-Shipping" />
+      <config projectName="UE4" targetName="UE4Editor-Win64-DebugGame" />
+      <config projectName="UE4" targetName="CardGameEditor" />
+      <config projectName="UE4" targetName="CardGame-Win64-Shipping" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Release" CONFIG_NAME="Release" />
+      <configuration PROFILE_NAME="RelWithDebInfo" CONFIG_NAME="RelWithDebInfo" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d5caa9fa-1880-4a05-9842-1b83a6a0cc7c" name="Default Changelist" comment="updated perlin const">
+      <change beforePath="$PROJECT_DIR$/Build/AllDesktop/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/AndroidClient/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_ASTC/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_ASTCClient/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_ATC/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_ATCClient/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_DXT/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_DXTClient/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_ETC1/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_ETC1Client/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_ETC1a/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_ETC1aClient/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_ETC2/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_ETC2Client/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_Multi/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_MultiClient/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_PVRTC/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Android_PVRTCClient/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/IOS/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/IOSClient/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/LinuxAArch64Client/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/LinuxAArch64NoEditor/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/LinuxAArch64Server/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/LinuxClient/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/LinuxNoEditor/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/LinuxServer/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Lumin/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/LuminClient/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/TVOS/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/TVOSClient/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Windows/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/WindowsClient/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/WindowsNoEditor/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/WindowsServer/FileOpenOrder/CookerOpenOrder.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CardGame.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/CardGame.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/start.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/start.umap" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iPKXlt5V8UUX0JG2j2gfxS7fpM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\UNREAL PROJECT\CardGame\Source\CardGame\Shared\Private" />
+      <recent name="E:\UNREAL PROJECT\CardGame\Source\CardGame\Shared\Public" />
+      <recent name="E:\UNREAL PROJECT\CardGame\Source\CardGame\Map" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.CardGameEditor">
+    <configuration name="CardGame-Win64-DebugGame" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="CardGame-Win64-DebugGame" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardGame-Win64-Shipping" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="CardGame-Win64-Shipping" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardGame" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="CardGame" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardGameEditor-Win64-DebugGame" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="CardGameEditor-Win64-DebugGame" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardGameEditor-Win64-Shipping" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="CardGameEditor-Win64-Shipping" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardGameEditor" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="CardGameEditor" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FakeTarget" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="FakeTarget" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="UE4" RUN_TARGET_NAME="FakeTarget">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UE4Editor-Win64-DebugGame" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="UE4Editor-Win64-DebugGame" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UE4Editor-Win64-Shipping" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="UE4Editor-Win64-Shipping" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UE4Editor" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="UE4Editor" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UE4Game-Win64-DebugGame" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="UE4Game-Win64-DebugGame" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UE4Game-Win64-Shipping" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="UE4Game-Win64-Shipping" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UE4Game" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="UE4" TARGET_NAME="UE4Game" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.CardGame" />
+      <item itemvalue="CMake Application.CardGame-Win64-DebugGame" />
+      <item itemvalue="CMake Application.CardGame-Win64-Shipping" />
+      <item itemvalue="CMake Application.CardGameEditor" />
+      <item itemvalue="CMake Application.CardGameEditor-Win64-DebugGame" />
+      <item itemvalue="CMake Application.CardGameEditor-Win64-Shipping" />
+      <item itemvalue="CMake Application.FakeTarget" />
+      <item itemvalue="CMake Application.UE4Editor" />
+      <item itemvalue="CMake Application.UE4Editor-Win64-DebugGame" />
+      <item itemvalue="CMake Application.UE4Editor-Win64-Shipping" />
+      <item itemvalue="CMake Application.UE4Game" />
+      <item itemvalue="CMake Application.UE4Game-Win64-DebugGame" />
+      <item itemvalue="CMake Application.UE4Game-Win64-Shipping" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5caa9fa-1880-4a05-9842-1b83a6a0cc7c" name="Default Changelist" comment="" />
+      <created>1601803833506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601803833506</updated>
+      <workItem from="1601803844054" duration="186000" />
+      <workItem from="1601804311874" duration="1289000" />
+      <workItem from="1601805628776" duration="542000" />
+      <workItem from="1601806530806" duration="110000" />
+      <workItem from="1601806858053" duration="441000" />
+      <workItem from="1601808087170" duration="4090000" />
+      <workItem from="1601812597977" duration="2551000" />
+      <workItem from="1601842058059" duration="1433000" />
+      <workItem from="1601843639712" duration="3872000" />
+      <workItem from="1601924139417" duration="809000" />
+      <workItem from="1601927306393" duration="1967000" />
+      <workItem from="1601929342926" duration="3034000" />
+      <workItem from="1602087577141" duration="4281000" />
+      <workItem from="1602094559880" duration="3875000" />
+      <workItem from="1602175885974" duration="6521000" />
+      <workItem from="1602397872214" duration="13445000" />
+      <workItem from="1602420221494" duration="1004000" />
+      <workItem from="1602421326276" duration="7807000" />
+      <workItem from="1602523258682" duration="1377000" />
+      <workItem from="1602524972433" duration="27000" />
+      <workItem from="1602525126969" duration="1881000" />
+      <workItem from="1602527096300" duration="17000" />
+      <workItem from="1602527144127" duration="114000" />
+      <workItem from="1602527389563" duration="5150000" />
+      <workItem from="1602533777109" duration="2165000" />
+      <workItem from="1602537415785" duration="1034000" />
+      <workItem from="1602612484452" duration="328000" />
+      <workItem from="1602612982180" duration="196000" />
+      <workItem from="1602618232638" duration="4813000" />
+      <workItem from="1603523675435" duration="3066000" />
+      <workItem from="1603527120472" duration="2362000" />
+      <workItem from="1603609639447" duration="10556000" />
+      <workItem from="1603644486507" duration="655000" />
+      <workItem from="1603645412279" duration="347000" />
+      <workItem from="1603647569712" duration="3061000" />
+      <workItem from="1603703952096" duration="43000" />
+      <workItem from="1603704129079" duration="28000" />
+      <workItem from="1603705572772" duration="166000" />
+      <workItem from="1603706271296" duration="448000" />
+      <workItem from="1603706948290" duration="370000" />
+    </task>
+    <task id="LOCAL-00001" summary="updated solution - moved and use CLion">
+      <created>1601812032930</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601812032930</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update">
+      <created>1601844865601</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601844865601</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated solution - terrain generator updated">
+      <created>1601845861935</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601845861935</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updated solution - huge refactor thx to CLion">
+      <created>1601932001914</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601932001914</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated solution - huge refactor thx to CLion">
+      <created>1601932113860</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601932113860</updated>
+    </task>
+    <task id="LOCAL-00006" summary="small fixes">
+      <created>1601932296490</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601932296490</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updated">
+      <created>1602178011816</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602178011816</updated>
+    </task>
+    <task id="LOCAL-00008" summary="updated">
+      <created>1602183379543</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602183379543</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Refactoring finished">
+      <created>1602411676126</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602411676127</updated>
+    </task>
+    <task id="LOCAL-00010" summary="updated perlin const">
+      <created>1602431326793</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602431326793</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated solution - moved and use CLion" />
+    <MESSAGE value="Update" />
+    <MESSAGE value="updated solution - terrain generator updated" />
+    <MESSAGE value="updated solution - huge refactor thx to CLion" />
+    <MESSAGE value="small fixes" />
+    <MESSAGE value="updated" />
+    <MESSAGE value="Refactoring finished" />
+    <MESSAGE value="updated perlin const" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated perlin const" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603706574214">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603706574214" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1603528327985">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603528327985" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603526980869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603526980869" />
+    <state x="720" y="222" key="RollbackChangesDialog" timestamp="1603706528208">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="720" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603706528208" />
+    <state x="339" y="24" key="SettingsEditor" timestamp="1603707215103">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="339" y="24" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603707215103" />
+    <state x="681" y="261" width="915" height="524" key="StructurePopup" timestamp="1601847902830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="261" width="915" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1601847902830" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602431332151">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602431332151" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1601929061115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601929061115" />
+    <state x="667" y="119" width="603" height="801" key="find.popup" timestamp="1603706713214">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="119" width="603" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603706713214" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602408774717">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602408774717" />
+  </component>
+</project>

@@ -1,0 +1,15 @@
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/UE4Editor-Win64-DebugGame.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/UE4Game-Win64-DebugGame.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/UE4Editor-Win64-Shipping.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/UE4Editor.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/UE4Game-Win64-Shipping.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/UE4Game.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/CardGame-Win64-DebugGame.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/rebuild_cache.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/CardGame-Win64-Shipping.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/CardGame.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/CardGameEditor-Win64-DebugGame.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/CardGameEditor-Win64-Shipping.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/edit_cache.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/CardGameEditor.dir
+E:/UNREAL PROJECT/CardGame 4.25 - 2/cmake-build-relwithdebinfo/CMakeFiles/FakeTarget.dir

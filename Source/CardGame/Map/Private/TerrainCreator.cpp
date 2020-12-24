@@ -56,8 +56,8 @@ void TerrainCreator::CalculateTerrainTypes() {
             for (auto &terrain : TerrainTypes) {
                 if (terrainNoiseCords[row][column] >= terrain.minField &&
                     terrainNoiseCords[row][column] <= terrain.maxField) {
-                    MapHex[row][column] = {
-                            terrain.Type,
+                    MapHex[row][column] = {                            
+                            terrain.Type,                            
                             MapCords[row][column]
                     };
                 }

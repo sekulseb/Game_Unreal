@@ -21,32 +21,32 @@ const int MATERIALS_AMOUNT = 1;
 
 const TerrainType WATER_TERRAIN = {
 	TERRAIN_TYPES::WATER,
-	-1.0,
+	-2.0,
 	0.0
 };
 
 const TerrainType GRASS_TERRAIN = {
 	TERRAIN_TYPES::GRASS,
-	0.0001,
+	0.0,
 	0.1
 };
 
 const TerrainType TREE_WITH_GRASS_TERRAIN = {
 	TERRAIN_TYPES::TREE_GRASS,
-	0.10001,
+	0.1,
 	0.2
 };
 
 const TerrainType PINE_TREE_TERRAIN = {
 	TERRAIN_TYPES::PINE_TREE,
-	0.20001,
+	0.2,
 	0.3
 };
 
 const TerrainType MOUNTAIN_TERRAIN = {
 	TERRAIN_TYPES::MOUNTAIN,
 	0.3,
-	1.0
+	2.0
 };
 
 // NOISE
@@ -55,8 +55,8 @@ const float PERLIN_NOISE_INC = 0.1;
 
 // MAP
 
-const int ROWS_AMOUNT = 14;
-const int COLUMNS_AMOUNT = 20;
+const int ROWS_AMOUNT = 12;
+const int COLUMNS_AMOUNT = 12;
 
 const int HEX_TILE_SIDE_LENGTH = 1;
 const float HEX_TILE_GAP = 2;
